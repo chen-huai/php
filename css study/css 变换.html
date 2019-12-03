@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变换</title>
+    <style type="text/css">
+        .classa{
+            width: 200px;
+            height: 200px;
+            background-color: #00aced;
+        }
+        .classa:hover {
+
+            /*动画次数*/
+            animation-iteration-count: initial;
+            /*rotate(45deg):旋转角度；scale(1.5):缩放比例*/
+            transform: rotate(45deg);
+            /*设置变换点*/
+            transform-origin: top right;
+        }
+    </style>
+    <style type="text/css">
+        .classb{
+            width: 200px;
+            height: 200px;
+            background-color: #00aced;
+        }
+        .classb:hover {
+
+            /*动画次数*/
+            animation-iteration-count: initial;
+            /*rotate(45deg):旋转角度；scale(1.5):缩放比例*/
+            transform: rotate(45deg);
+            /*设置变换点*/
+            transform-origin: bottom right;
+        }
+    </style>
+</head>
+<body>
+    <p class="classa">a</p>
+    <p class="classb">a</p>
+</body>
+</html>
