@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom对象</title>
+</head>
+<body>
+    <p id="pid">hello</p>
+    <button onclick="demo()">button</button>
+    <script>
+        function demo() {
+            var na=document.getElementById('pid');
+            na.innerHTML='world';
+
+        }
+    </script>
+    <br/>
+    <a id="aid" style="background-color: #00aced">hello</a>
+    <br/>
+    <button onclick="demo2()">button2</button>
+    <script>
+        function demo2() {
+            var na=document.getElementById('aid');
+            na.style.background='red';
+
+        }
+    </script>
+
+</body>
+</html>

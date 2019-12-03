@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量转换</title>
+    <!--变量转换-->
+    <script>
+        window.onload=function ()
+        {
+            var oTxt1=document.getElementById('text1');
+            var oTxt2=document.getElementById('text2');
+            var oBtn=document.getElementById('btn1');
+            oBtn.onclick=function ()
+            {
+                var n1=parseInt(oTxt1.value);
+                var n2=parseInt(oTxt2.value);
+                if(isNaN(n1) || isNaN(n2))
+                {
+                    alert('您输入的有误');
+                }
+                /*
+                这种方式两个都输入错误后，无法运行
+                else if(isNaN(n2))
+                {
+                    alert('您输入的有误');
+                }*/
+                else
+                {
+                    alert(n1+n2);
+                }
+                /*alert(oTxt1.value+oTxt2.value);
+                alert(typeof oTxt2.value);
+                //NaN非数字
+                alert('转换过后：'+parseInt(oTxt1.value)+parseInt(oTxt2.value))*/
+
+            }
+        }
+    </script>
+</head>
+<body>
+<input id="text1" type="text">
+<input id="text2" type="text">
+<input id="btn1" type="button" value="按钮">
+</body>
+</html>

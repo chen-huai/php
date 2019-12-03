@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>不定参</title>
+    <script>
+        function sum()
+        {
+            var result=0;
+            //arguments表示不定参数，
+            for (var i=0;i<arguments.length;i++)
+            {
+                result+=arguments[i];
+            }
+            return result;
+        }
+        alert(sum(12,2,3,6,5,5,8,8,));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

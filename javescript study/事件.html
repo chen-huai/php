@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+    <style>
+        .classa{
+            width: 200px;
+            height: 100px;
+            background-color: #38ad5a;
+        }
+        .classb{
+            width: 200px;
+            height: 100px;
+            background-color: #ad322d;
+
+        }
+        .classc{
+            width: 200px;
+            height: 100px;
+            background-color: #1c36ad;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--就是一些触发性事件：点击，划出，划入等等-->
+    <div class="classa" onmouseout="onOut(this)" onmouseover="onOver(this)">a</div>
+
+    <script>
+        function onOver(ooj) {
+            ooj.innerHTML='hello';
+
+        }
+        function onOut(ooj) {
+            ooj.innerHTML='world';
+
+        }
+    </script>
+    <!--onclick事件-->
+    <div id='did' class="classb" onmouseout="onOut(this)" onmouseover="onOver(this)">a</div>
+    <input type="button" value="button" onclick="oc('classa')">
+    <script>
+        function oc(ooj) {
+           var as=document.getElementById('did');
+            as.className=ooj
+        }
+
+
+    </script>
+
+    <!--隐藏和显示-->
+    <br/>
+    <input type="button" value="显示/隐藏" onclick="showHide()">
+    <div id='did1' class="classc">a</div>
+
+    <script>
+        function showHide() {
+           var ad=document.getElementById('did1');
+
+           if(ad.style.display=="block"){
+               ad.style.display="none";
+           }
+           else{
+               ad.style.display="block";
+           }
+        }
+
+
+    </script>
+</body>
+</html>

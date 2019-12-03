@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日历</title>
+    <style>
+        #div1
+        {
+            width: 200px;
+            height: 200px;
+            background-color: #a0a0a0;
+
+        }
+    </style>
+    <script>
+        window.onload=function ()
+        {
+            var otxt=document.getElementById('txt1');
+            var obtn=document.getElementById('btn1');
+            var odiv=document.getElementById('div1');
+            obtn.onclick=function ()
+            {
+                odiv.innerHTML=otxt.value;
+            }
+
+        }
+    </script>
+</head>
+<body>
+<input id='txt1' type="text">
+<input id='btn1' type="button" value="按钮">
+<div id='div1' ></div>
+
+</body>
+</html>
