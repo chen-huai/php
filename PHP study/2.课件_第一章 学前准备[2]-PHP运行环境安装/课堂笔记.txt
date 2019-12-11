@@ -1,0 +1,31 @@
+1.需要安装的软件
+  1)web服务器	apache
+  2)PHP应用服务器	解释，执行我们编写的PHP程序	PHP
+  3)数据库管理系统  数据库服务器	MySQL
+2.门槛有点高，不利于我们PHP学习者的一个兴趣
+  wampserver  下载地址http://pan.baidu.com/s/1qW38DnY
+  说白了里面集成了Apache，PHP，MySQL三个软件 ，安装一个即可相当于安装三个，并且也自动帮我们配置好了!
+  wampserver安装 选择自己的版本
+     32位的操作系统：Wampserver2.4-x86
+     64位的操作系统:Wampserver2.4-x64.exe
+3.安装好之后的一个访问方法
+  127.0.0.1  和我们现实生活中的 称谓 ‘我’
+  127.0.0.1   localhost
+4.访问到的这些界面是哪里来的，放在哪里？
+  F:\wamp\www
+  http://localhost:80/
+  单独的一个/  表示根目录
+
+  站点根目录：
+  http://localhost/
+  http://localhost/index.php
+  同样的效果
+  访问某个文件夹 默认会去访问这个文件夹下面的index.php 或者 也会访问 index.html
+    					     既有index.php也有index.html在我们这个环境里面 默认回去访问index.php
+
+
+5.只有放在F:\wamp\www目录下面的文件才会被我们访问得到
+6.我们写的PHP代码 放在根目录下面的文件夹或者文件里面 后缀是***.php
+
+
+7.
