@@ -3,6 +3,7 @@ header('Content-type:text/html;charset=utf-8');
 //与MySQL数据库建立连接
 $link=@mysqli_connect('localhost','root','123456','',3306);
 //连接错误时的提示
+
 if(mysqli_connect_errno()){
 	exit(mysqli_connect_error());
 }
