@@ -8,9 +8,9 @@ if(mysqli_connect_errno()){
 	exit(mysqli_connect_error());
 }
 //设置默认字符编码
-mysqli_set_charset($link, 'utf8');
+var_dump(mysqli_set_charset($link, 'utf8'));
 //选择特定的数据库
-mysqli_select_db($link,'d2');
+var_dump(mysqli_select_db($link,'d14'));
 
 
 //做各种操作!

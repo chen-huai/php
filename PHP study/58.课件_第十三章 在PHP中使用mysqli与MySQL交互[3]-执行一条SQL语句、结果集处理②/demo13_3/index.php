@@ -25,7 +25,6 @@ mysqli_free_result($result);
 //如果使用MYSQLI_USE_RESULT模式则必须在获取完所有的结果才可使用该函数。
 $query='select * from t1';
 $result=mysqli_query($link, $query,MYSQLI_USE_RESULT);
-
 var_dump(mysqli_fetch_row($result));
 var_dump(mysqli_fetch_row($result));
 var_dump(mysqli_fetch_row($result));
